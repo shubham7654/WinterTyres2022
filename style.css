@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #app {
@@ -13,7 +13,7 @@
 }
 
 header {
-  background-color: #FFDB00;
+  background-color: #ffdb00;
   background-image: url("./Images/brandLogo.png");
   background-position: center;
   background-size: 250px;
@@ -21,14 +21,75 @@ header {
   padding: 40px;
 }
 
-main {
+#main-container {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   background-image: url("./Images/landingBG.jpg");
   background-repeat: no-repeat;
   background-size: 200%;
-  background-position: -200px -220px;
+  background-position: center;
+  justify-content: flex-end;
+}
+
+main {
+  margin: 20px 30px;
 }
 
 #main-text-container {
   color: #fff;
+  align-self: flex-end;
+}
+
+#main-text-container > h1 {
+  line-height: 1;
+  font-size: 40px;
+  align-self: flex-end;
+}
+
+#main-buttons-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#main-buttons-container button a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#GDS-button-container > button {
+  border: 2px dashed #000;
+  font-size: 32px;
+  line-height: 1;
+  padding: 20px 30px;
+  border-radius: 4px;
+}
+#GDS-button-container > button a {
+  color: #0070c0;
+}
+
+#book-button-container > button {
+  background-color: #ffdb00;
+  padding: 10px 25px;
+  border: none;
+  font-size: 30px;
+}
+
+#book-button-container > button a {
+  color: #595959;
+}
+
+@media screen and (max-width: 700px) {
+  #main-container {
+    background-size: 350%;
+  }
+  #main-buttons-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #main-buttons-container * {
+    width: 100% !important;
+  }
 }

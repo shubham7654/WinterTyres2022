@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #FFDB00;
+  background-image: url("./Images/brandLogo.png");
+  background-position: center;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+main {
+  
+}

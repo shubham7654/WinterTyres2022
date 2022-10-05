@@ -3,6 +3,13 @@
 *::before {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 header {
@@ -15,5 +22,13 @@ header {
 }
 
 main {
-  
+  flex: 1;
+  background-image: url("./Images/landingBG.jpg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: -200px -220px;
+}
+
+#main-text-container {
+  color: #fff;
 }

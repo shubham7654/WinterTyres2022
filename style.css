@@ -116,10 +116,12 @@ main {
 .table-caption {
   color: #ffc000;
   font-size: 38px;
+  text-align: center;
 }
 
 .book-main-container > table > thead {
   color: #ffc000;
+  text-align: center;
 }
 
 .book-main-container > table > tbody td {

@@ -144,11 +144,12 @@ main {
   border: none;
   margin: 5px;
   width: 100%;
-  color: #595959;
 }
 
-.book-main-buttons-container button a {
+.book-main-buttons-container a button {
   text-decoration: none;
+  color: #595959;
+  cursor: pointer;
 }
 
 .back-button-container button {

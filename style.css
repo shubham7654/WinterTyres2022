@@ -97,17 +97,30 @@ main {
 /* For Book Page */
 
 .book-main-container {
+  text-align: center;
+}
+
+.months-scroll-container {
+  overflow: hidden;
+}
+
+.months-container {
+  /* display: flex; */
+  justify-content: center;
+}
+
+.month {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.book-main-container h3 {
+.month h3 {
   margin: 5px;
 }
 
-.book-main-container > table {
+.month > table {
   border-collapse: collapse;
   aspect-ratio: 1 / 1;
   width: 100%;
@@ -119,12 +132,12 @@ main {
   text-align: center;
 }
 
-.book-main-container > table > thead {
+.month > table > thead {
   color: #ffc000;
   text-align: center;
 }
 
-.book-main-container > table > tbody td {
+.month > table > tbody td {
   border: 1px solid #000;
   vertical-align: top;
   background-color: #92d050;
@@ -170,12 +183,18 @@ main {
 }
 
 @media screen and (min-width: 600px) {
-  .book-main-container > table {
+  .month > table {
     aspect-ratio: unset;
     width: fit-content;
   }
-  .book-main-container > table > tbody td {
+  .month > table > tbody td {
     width: 100px !important;
     height: 100px !important;
   }
+}
+
+/* HTML events css */
+
+#event-video {
+  width: 100%;
 }
